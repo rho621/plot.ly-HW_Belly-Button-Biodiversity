@@ -54,7 +54,7 @@ function buildMetadata(sample) {
        
         Plotly.plot("bubble", bubbleData, bubbleLayout);
 
-        var yticks = otu_ids.slice(0, 10).map(otuID => 'OTU ${otuID}').reverse();
+        var yticks = otu_ids.slice(0, 10).map(otuID => `OTU ${otuID}`).reverse();
         var barData = [
             {
                 y: yticks,
